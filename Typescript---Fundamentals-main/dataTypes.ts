@@ -32,3 +32,29 @@ console.log(nullValue);
 // undefined
 let undefinedValue: undefined = undefined;
 console.log(undefinedValue);
+
+// Arrays
+let names=["Omar","Ali","Mohamed"];
+let table:string[]=["Omar","Ali","Mohamed"];
+let salary:number[]=[1253,2255589,32258];
+console.log("my names is "+names[0]);
+
+//union types
+let price: string|number|boolean="25$";
+price="omar";
+price= 25;
+console.log(price);
+
+//object
+let employee=
+ {
+    name:"Omar",
+    age :29,
+    address:{
+        firstaddress:"Cairo",
+        secondaddress:"Egypt" 
+    }
+
+} 
+console.log("my name is "+employee.name+" and my age is "+employee.age+"my address is "+employee.address.firstaddress+" , "+employee.address.secondaddress);
+
