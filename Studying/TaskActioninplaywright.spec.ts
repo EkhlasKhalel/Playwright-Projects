@@ -2,7 +2,7 @@
 
 import {test, expect, Locator} from '@playwright/test';
 
-test("Automatinig a E2E senario Test Automation Practice", async ({page}) => {
+test("Automatinig a E2E senario Test Automation Practice website", async ({page}) => {
 let userNameFiled:Locator = page.locator('[id="inputUsername"]') 
 let passwordField:Locator = page.locator('[id="inputPassword"]')
 let rememberMeCheckbox:Locator = page.locator('[type="checkbox"]')

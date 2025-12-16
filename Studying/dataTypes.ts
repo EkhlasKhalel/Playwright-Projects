@@ -33,14 +33,54 @@ console.log(nullValue);
 let undefinedValue: undefined = undefined;
 console.log(undefinedValue);
 
-// Arrays
-let names=["Omar","Ali","Mohamed"];
-let table:string[]=["Omar","Ali","Mohamed"];
-let salary:number[]=[1253,2255589,32258];
+//Arrays
+let list: number[] = [1, 2, 3, 4, 5];
+console.log("my list is "+list);
+let list2: Array<string> = ["Omar", "Ahmed", "Sayed"];
+console.log("my list2 is "+list2);
+let list3: any[] = [1, "Omar", true, 4.5];
+console.log("my list3 is "+list3);
+console.log("my list3 element at index 1 is "+list3[1]);
+console.log("my list3 element at index 2 is "+list3[2]);
+
+// Empty Arrays
+let names: string[] = [];
+console.log("my names are "+names);
+
+//Array literals
+names = ["Omar", "Ahmed", "Sayed"];
 console.log("my names is "+names[0]);
 
+//Array constructor
+let numbers: Array<number> = new Array(1, 2, 3, 4, 5);
+console.log("my numbers are "+numbers);
+
+//aadding element to array
+names.push("Mahmoud");
+console.log("my names after adding element "+names);
+
+//removing element from array
+names.pop();
+console.log("my names after removing element "+names);
+
+//adding element at specific index
+names[1]="Ali";
+console.log("my names after adding element at specific index "+names);
+
+//length of array
+console.log("length of names array is "+names.length);
+
+//add element at the end of array
+names[names.length]="Khaled";
+console.log("my names after adding element at the end of array "+names);
+
+//remove element from the end of array
+names.length=names.length-1;
+console.log("my names after removing element from the end of array "+names);
+
+
 //union types
-let price: string|number|boolean="25$";
+let price: string | number | boolean="25$";
 price="omar";
 price= 25;
 console.log(price);
